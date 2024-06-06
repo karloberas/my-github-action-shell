@@ -17,3 +17,4 @@ runs:
         GREETING="Hello, ${{ inputs.name }}! Welcome to GitHub Actions."
         # Set the output variable
         echo "greeting=$GREETING" >> $GITHUB_OUTPUT
+      shell: bash  
