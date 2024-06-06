@@ -14,7 +14,7 @@ jobs:
 
       - name: Run My Shell Action
         id: myaction
-        uses: ./my-shell-action
+        uses: ./my-github-action-shell
         with:
           name: "GitHub User"
 
