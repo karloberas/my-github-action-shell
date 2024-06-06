@@ -1,0 +1,19 @@
+name: "My Shell Action"
+description: "A GitHub Action that uses shell commands and sets an output value"
+inputs:
+  name:
+    description: "Name to greet"
+    required: true
+    default: "World"
+outputs:
+  greeting:
+    description: "The greeting message"
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo "Hello, ${{ inputs.name }}!"
+        # Create a greeting message
+        GREETING="Hello, ${{ inputs.name }}! Welcome to GitHub Actions."
+        # Set the output variable
+        echo "greeting=$GREETING" >> $GITHUB_OUTPUT
