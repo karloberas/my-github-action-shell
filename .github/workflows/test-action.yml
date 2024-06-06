@@ -19,4 +19,4 @@ jobs:
           name: "GitHub User"
 
       - name: Use output from My Shell Action
-        run: echo "The greeting message is: ${{ steps.myaction.outputs.greeting }}"
+        run: "echo 'The greeting message is: ${{ steps.myaction.outputs.greeting }}'"
