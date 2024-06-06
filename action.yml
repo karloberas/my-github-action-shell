@@ -8,6 +8,7 @@ inputs:
 outputs:
   greeting:
     description: "The greeting message"
+    value: ${{ steps.set-output.outputs.greeting }}  # Referencing the output value from a step    
 runs:
   using: "composite"
   steps:
