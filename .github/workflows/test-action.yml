@@ -3,7 +3,7 @@ name: "Test My Shell Action"
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test:
