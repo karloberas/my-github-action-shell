@@ -12,7 +12,8 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: |
+    - id: set-output  # Assign an ID to the step
+      run: |
         echo "Hello, ${{ inputs.name }}!"
         # Create a greeting message
         GREETING="Hello, ${{ inputs.name }}! Welcome to GitHub Actions."
