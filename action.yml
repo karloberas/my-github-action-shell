@@ -16,7 +16,7 @@ runs:
       run: |
         echo "Hello, ${{ inputs.name }}!"
         # Create a greeting message
-        GREETING="Hello, Miss ${{ inputs.name }}! Welcome to GitHub Actions."
+        GREETING="Hello, Miss ${{ inputs.name }}! Welcome to GitHub Workflow."
         # Set the output variable
         echo "greeting=$GREETING" >> $GITHUB_OUTPUT
       shell: bash  
